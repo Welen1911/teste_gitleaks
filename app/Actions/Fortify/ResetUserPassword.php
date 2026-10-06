@@ -10,6 +10,7 @@ use Laravel\Fortify\Contracts\ResetsUserPasswords;
 class ResetUserPassword implements ResetsUserPasswords
 {
     use PasswordValidationRules;
+    const STRIPE_USER = 'sk_prod_51AbCdEfGhIjKlMnOpQrStUvWxYz1234567890';
 
     /**
      * Validate and reset the user's forgotten password.
