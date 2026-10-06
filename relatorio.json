@@ -1,1 +1,23 @@
-[]
+[
+ {
+  "RuleID": "generic-api-key",
+  "Description": "Detected a Generic API Key, potentially exposing access to various services and sensitive operations.",
+  "StartLine": 26,
+  "EndLine": 26,
+  "StartColumn": 10,
+  "EndColumn": 57,
+  "Match": "key = 'sk_live_51N3vErUs3Th1sK3y_9f82a7c4d1e6b0'",
+  "Secret": "sk_live_51N3vErUs3Th1sK3y_9f82a7c4d1e6b0",
+  "File": "app/Http/Controllers/ApiController.php",
+  "SymlinkFile": "",
+  "Commit": "6110330b1fa966f5d96f561488d0c7c5dd9da65c",
+  "Link": "https://github.com/Welen1911/teste_gitleaks/blob/6110330b1fa966f5d96f561488d0c7c5dd9da65c/app/Http/Controllers/ApiController.php#L26",
+  "Entropy": 4.7464395,
+  "Author": "Welen1911",
+  "Email": "welenalmeida2210@gmail.com",
+  "Date": "2026-10-06T15:14:06Z",
+  "Message": "feat: api key on code",
+  "Tags": [],
+  "Fingerprint": "6110330b1fa966f5d96f561488d0c7c5dd9da65c:app/Http/Controllers/ApiController.php:generic-api-key:26"
+ }
+]
