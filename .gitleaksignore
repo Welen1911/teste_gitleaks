@@ -1,0 +1,5 @@
+# Achados históricos já conhecidos (a chave sk_live foi revogada/rotacionada).
+# Formato: commit:arquivo:regra:linha — não contém o segredo, pode ser versionado.
+6110330b1fa966f5d96f561488d0c7c5dd9da65c:app/Http/Controllers/ApiController.php:stripe-live-secret:26
+b5acdbab21c1d9b4008f9b7683db5fb04cb6662c:relatorio.json:stripe-live-secret:9
+b5acdbab21c1d9b4008f9b7683db5fb04cb6662c:relatorio.json:stripe-live-secret:10

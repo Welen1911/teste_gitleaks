@@ -1,0 +1,24 @@
+title = "teste_gitleaks"
+
+# Herda todas as regras padrão do gitleaks (github-pat, aws, generic-api-key, ...)
+[extend]
+useDefault = true
+
+# Regra própria: chave secreta "live" do Stripe.
+# Sem ela, a chave cai na regra genérica "generic-api-key".
+[[rules]]
+id = "stripe-live-secret"
+description = "Stripe live secret key"
+regex = '''sk_live_[0-9A-Za-z_]{20,}'''
+keywords = ["sk_live_"]
+
+# Caminhos que não são código nosso e só geram ruído.
+[[allowlists]]
+description = "Dependências, build e arquivos gerados"
+paths = [
+    '''(^|/)vendor/''',
+    '''(^|/)node_modules/''',
+    '''^public/build/''',
+    '''^storage/''',
+    '''\.lock$''',
+]
