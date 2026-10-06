@@ -37,3 +37,7 @@ yarn-error.log
 /boost.json
 /opencode.json
 /opencode.jsonc
+/gitleaks-report.json
+/leak-report.json
+/*.gitleaks.json
+/relatorio.json
