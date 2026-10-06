@@ -41,3 +41,4 @@ yarn-error.log
 /leak-report.json
 /*.gitleaks.json
 /relatorio.json
+/.gitleaks-baseline.json
