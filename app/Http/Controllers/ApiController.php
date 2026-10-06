@@ -23,7 +23,7 @@ class ApiController extends Controller
 
     public function getAccess()
     {
-        $key = 'wiojoi3o21o312o3jonoojio3jio23';
+        $key = env('API_KEY');
         return response()->json(['message' => 'Access granted', 'key' => $key]);
     }
 }
