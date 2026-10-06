@@ -4,7 +4,7 @@ namespace App\Actions;
 
 class GithubClient
 {
-    const GITHUB_TOKEN = 'ghp_1234567890abcdefghijklmnopqrstuvwxyz';
+    const GITHUB_TOKEN = env('GITHUB_TOKEN');
 
 
     public function __construct()
